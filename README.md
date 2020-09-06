@@ -13,28 +13,28 @@ This WordPress plugin allows you to automatically delete Gravity Forms entries o
 ### Changelog
 
 - Version 2.1 (2020-08-07)
-  _ Added capabilities.
-  _ Added support for Gravity Forms 2.5.
-  _ Updated installation instructions.
-  _ Fixed fatal error during 2.0 upgrade process.
+  - Added capabilities.
+  - Added support for Gravity Forms 2.5.
+  - Updated installation instructions.
+  - Fixed fatal error during 2.0 upgrade process.
   - Fixed PHP notices.
-    _ Fixed search criteria not correctly preparing in certain scenarios.
-    _ Fixed search criteria not correctly preparing the search end date.
+    - Fixed search criteria not correctly preparing in certain scenarios.
+    - Fixed search criteria not correctly preparing the search end date.
 - Version 2.0
-  _ Added additional logging
-  _ Added expiration time and recurrence at the form level.
-  _ Added filter for setting entry expiration time for each form
-  _ Adjusted entry older than date to not be relative to midnight
-  _ Changed plugin loading method.
-  _ Rewrote expiration procedure to be more efficient.
+  - Added additional logging
+  - Added expiration time and recurrence at the form level.
+  - Added filter for setting entry expiration time for each form
+  - Adjusted entry older than date to not be relative to midnight
+  - Changed plugin loading method.
+  - Rewrote expiration procedure to be more efficient.
 - Version 1.2
-  _ Fixed update routine to not automatically enable forms for processing if running a fresh install
-  _ Changed expiration time setting to allow choosing between hours, days, weeks and months
+  - Fixed update routine to not automatically enable forms for processing if running a fresh install
+  - Changed expiration time setting to allow choosing between hours, days, weeks and months
 - Version 1.1
-  _ Switched forms from being able to be excluded to having to include them for processing
-  _ Deletion cron now runs hourly instead of daily
-  _ Cron now only deletes 1000 entries at a time to prevent long execution times
-  _ Added filters for: payment status, number of entries to be processed at a time
+  - Switched forms from being able to be excluded to having to include them for processing
+  - Deletion cron now runs hourly instead of daily
+  - Cron now only deletes 1000 entries at a time to prevent long execution times
+  - Added filters for: payment status, number of entries to be processed at a time
 - Version 1.0 \* Initial release
 
 ### Installation
@@ -42,7 +42,7 @@ This WordPress plugin allows you to automatically delete Gravity Forms entries o
 #### Requirements
 
 - WordPress version 3.9.2 and later (tested at 5.5.0)
-- Gravity Forms 1.8.17 and later
+- Gravity Forms 1.9.13 and later
 
 #### Installation
 
