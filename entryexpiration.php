@@ -1,14 +1,14 @@
 <?php
 /**
-Plugin Name: Entry Expiration for Gravity Forms
-Plugin URI: https://travislop.es/plugins/gravity-forms-entry-expiration/
-Description: Provides a simple way to remove old entries in Gravity Forms.
-Version: 2.1
-Author: ForGravity
-Author URI: https://forgravity.com
-Text Domain: gravityformsentryexpiration
-Domain Path: /languages
- **/
+ * Plugin Name: Entry Expiration for Gravity Forms
+ * Plugin URI: https://travislop.es/plugins/gravity-forms-entry-expiration/
+ * Description: Provides a simple way to remove old entries in Gravity Forms.
+ * Version: 2.1
+ * Author: ForGravity
+ * Author URI: https://forgravity.com
+ * Text Domain: gravityformsentryexpiration
+ * Domain Path: /languages.
+ */
 
 define( 'GF_ENTRYEXPIRATION_VERSION', '2.1' );
 
@@ -16,7 +16,7 @@ define( 'GF_ENTRYEXPIRATION_VERSION', '2.1' );
 add_action( 'gform_loaded', array( 'GF_EntryExpiration_Bootstrap', 'load' ), 5 );
 
 /**
- * Class GF_EntryExpiration_Bootstrap
+ * Class GF_EntryExpiration_Bootstrap.
  *
  * Handles the loading of Gravity Forms Entry Expiration and registers with the Add-On Framework.
  */
@@ -25,7 +25,6 @@ class GF_EntryExpiration_Bootstrap {
 	/**
 	 * If the Add-On Framework exists, Gravity Forms Entry Expiration is loaded.
 	 *
-	 * @access public
 	 * @static
 	 */
 	public static function load() {
@@ -35,21 +34,19 @@ class GF_EntryExpiration_Bootstrap {
 			return;
 		}
 
-		require_once( 'class-gf-entryexpiration.php' );
+		include_once 'class-gf-entryexpiration.php';
 
 		GFAddOn::register( 'GF_Entry_Expiration' );
-
 	}
-
 }
 
 /**
  * Returns an instance of the GFEntryExpiration class.
  *
- * @see    GF_Entry_Expiration::get_instance()
+ * @see GF_Entry_Expiration::get_instance()
  *
  * @return GF_Entry_Expiration|false
  */
 function gf_entryexpiration() {
-	return class_exists( 'GF_Entry_Expiration' ) ? GF_Entry_Expiration::get_instance() : false;
+	 return class_exists( 'GF_Entry_Expiration' ) ? GF_Entry_Expiration::get_instance() : false;
 }
