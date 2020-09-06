@@ -1,0 +1,6 @@
+{
+  "name": "forgravity/gravity-forms-entry-expiration",
+  "type": "wordpress-plugin",
+  "version": "2.1",
+  "require": {}
+}
